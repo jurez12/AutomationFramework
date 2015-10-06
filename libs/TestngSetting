@@ -1,0 +1,19 @@
+
+set ProjectPath=c:\Users\suresh\workspace\FrameWork
+set classpath=%ProjectPath%\bin;%ProjectPath%\libs\*
+java org.testng.TestNG %ProjectPath%\localtest.xml
+
+
+set ProjectPath=%WORKSPACE%
+set classpath=%ProjectPath%\bin;%ProjectPath%\libs\*
+java org.testng.TestNG %ProjectPath%\localtest.xml
+
+
+
+export ProjectPath=${WORKSPACE}
+export classpath=${ProjectPath}/bin:${ProjectPath}/libs/*
+java org.testng.TestNG =${ProjectPath}/localtest.xml
+
+export ProjectPath=${WORKSPACE}
+export classpath=${ProjectPath}\\bin:${ProjectPath}\\libs\\*
+java org.testng.TestNG =${ProjectPath}\\localtest.xml
