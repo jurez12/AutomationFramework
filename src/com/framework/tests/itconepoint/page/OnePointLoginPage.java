@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 import com.framework.core.SeleniumLibrary;
 
 
-public class OnePointLogin extends SeleniumLibrary {
+public class OnePointLoginPage extends SeleniumLibrary {
 
 	protected int timeout = 10;
 	protected String userId = "8631";
 	protected String password = "Itcinfotech9(";
 
-	public OnePointLogin(WebDriver driver) {
+	public OnePointLoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
