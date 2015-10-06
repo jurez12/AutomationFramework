@@ -22,6 +22,7 @@ public class OnePointLogin extends SeleniumLibrary {
 		clearAndsendKeys(By.xpath("//input[@id='pwd']"), password);
 		wait(2);
 		click(By.xpath("//input[@name='Submit']"), timeout);
+		wait(20);
 	}
 
 }

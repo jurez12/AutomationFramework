@@ -3381,3 +3381,16 @@ JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is
 2015-10-06 16:47:01 INFO  Library:171 - 10/06/2015 16:47:01: Clicking on [By.xpath: //input[@name='Submit']], [<a href='./screenshots/1444130221173.png'>Screenshot</a>]
 2015-10-06 16:47:01 INFO  Library:171 - 10/06/2015 16:47:01: Waiting for the element [By.xpath: //input[@name='Submit']], timeout = [10]
 2015-10-06 16:47:03 INFO  Library:171 - 10/06/2015 16:47:03: Successfully clicked the element
+2015-10-06 17:17:36 INFO  Library:171 - 10/06/2015 17:17:36: Go to url [ http://i3lerpweb4.itcinfotech.com:8000/psp/OPPORTAL/?cmd=login&languageCd=ENG& ], [<a href='./screenshots/1444132055610.png'>Screenshot</a>]
+2015-10-06 17:17:37 INFO  Library:171 - 10/06/2015 17:17:37: Wait: Sleeping for [2] seconds
+2015-10-06 17:17:39 INFO  Library:171 - 10/06/2015 17:17:39: Wait: Sleeping for [2] seconds
+2015-10-06 17:17:42 INFO  Library:171 - 10/06/2015 17:17:42: Clicking on [By.xpath: //input[@name='Submit']], [<a href='./screenshots/1444132061757.png'>Screenshot</a>]
+2015-10-06 17:17:42 INFO  Library:171 - 10/06/2015 17:17:42: Waiting for the element [By.xpath: //input[@name='Submit']], timeout = [10]
+2015-10-06 17:17:43 INFO  Library:171 - 10/06/2015 17:17:43: Successfully clicked the element
+2015-10-06 17:18:23 INFO  Library:171 - 10/06/2015 17:18:23: Go to url [ http://i3lerpweb4.itcinfotech.com:8000/psp/OPPORTAL/?cmd=login&languageCd=ENG& ], [<a href='./screenshots/1444132103332.png'>Screenshot</a>]
+2015-10-06 17:18:24 INFO  Library:171 - 10/06/2015 17:18:24: Wait: Sleeping for [2] seconds
+2015-10-06 17:18:26 INFO  Library:171 - 10/06/2015 17:18:26: Wait: Sleeping for [2] seconds
+2015-10-06 17:18:28 INFO  Library:171 - 10/06/2015 17:18:28: Clicking on [By.xpath: //input[@name='Submit']], [<a href='./screenshots/1444132108144.png'>Screenshot</a>]
+2015-10-06 17:18:28 INFO  Library:171 - 10/06/2015 17:18:28: Waiting for the element [By.xpath: //input[@name='Submit']], timeout = [10]
+2015-10-06 17:18:30 INFO  Library:171 - 10/06/2015 17:18:30: Successfully clicked the element
+2015-10-06 17:18:30 INFO  Library:171 - 10/06/2015 17:18:30: Wait: Sleeping for [20] seconds
