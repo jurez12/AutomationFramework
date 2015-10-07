@@ -69,8 +69,8 @@ public class ExcelReaderOld {
  		
  		Set<String> keys = map.keySet();
         for (String key : keys) {
-            System.out.println(key);
-            System.out.println(map.get(key));
+            System.out.println("PSID: " + key + "\t Hours" + map.get(key));
+            
         }
  	}
 
