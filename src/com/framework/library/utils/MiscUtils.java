@@ -2,6 +2,7 @@ package com.framework.library.utils;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -9,6 +10,7 @@ import java.awt.Toolkit;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.text.MessageFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -18,13 +20,14 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.TimeZone;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
+
+import com.framework.core.Global;
 
 
 
@@ -45,6 +48,42 @@ public class MiscUtils {
 	    
 	    public static boolean empty(String str) {
 	        return str == null || str.trim().isEmpty();
+	    }
+	    
+	    
+	    public static void creatImagesByTest(String text) {
+	  	    System.out.println("Creating an image!");
+	  		
+	  		int width = 250;
+	  		int height = 250;
+
+	  		//create a BufferedImage for mentioned image types.
+	  		BufferedImage buffImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+
+	  		//create a graphics2d object which can be used to draw into the buffered image
+	  		Graphics2D g2d = buffImg.createGraphics();
+	  		
+	  		//fill the rectangle with grey color
+	  		g2d.setColor(Color.GRAY);
+	  		g2d.fillRect(0, 0, width, height);
+	  		
+	  		//draw a string
+	  		g2d.setColor(Color.yellow);
+	  		g2d.setFont(new Font("TimesRoman", Font.BOLD, 40)); 
+	  		g2d.drawString(text, 20, 100);
+	  		
+	  		//disposes of this graphics context and releases any system resources that it is using
+	  		g2d.dispose();
+	  		
+	  		//write the image file
+	  		File f = new File(Global.USER_DIR +"/icon.jpg");
+	  		try {
+	  			ImageIO.write(buffImg, "jpg", f);
+	  		} catch (IOException e) {
+	  			e.printStackTrace();
+	  		}
+	  		
+	  		System.out.println(f.getAbsolutePath()+" created successfully!");
 	    }
 
 	    public boolean captureScreen(String dir, String fileName, int x, int y) throws Exception {
